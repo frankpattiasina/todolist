@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="task-entry-container">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button id="addTaskBtn">+</button>
+        </div>
+        <div class="tabs">
+            <button class="tab" id="workInProgressTab" onclick="switchTab('workInProgress')">Work in Progress</button>
+            <button class="tab" id="completedTab" onclick="switchTab('completed')">Completed</button>
+        </div>
+        <ul id="workInProgressList" class="task-list">
+            <!-- Work in Progress tasks will be added here -->
+        </ul>
+        <ul id="completedList" class="task-list" style="display: none;">
+            <!-- Completed tasks will be added here -->
+        </ul>
+        <div class="clear-completed-container">
+            <button id="clearCompletedBtn" class="clear-btn">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

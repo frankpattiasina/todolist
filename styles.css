@@ -1,0 +1,179 @@
+/* Set white background */
+body {
+    background-color: #ffffff;
+    margin: 0; /* Remove default margin */
+    font-family: "Arial", sans-serif; /* Apply font to the body */
+}
+
+/* Center content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style Todo List heading */
+h1 {
+    color: #0077cc; /* Light blue color */
+    font-size: 24px;
+}
+
+/* Style task entry container */
+.task-entry-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Limit the width */
+    margin-top: 20px; /* Add margin */
+}
+
+/* Style text box */
+#taskInput {
+    flex: 1; /* Allow input to grow */
+    height: 40px;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 10px; /* Added margin to separate from the button */
+    border: 2px solid #0077cc; /* Light blue border */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style "+" button */
+#addTaskBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #0077cc; /* Light blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #005faa; /* Darker blue color on hover */
+}
+
+/* Style task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left; /* Align task list to the left */
+    width: 100%; /* Ensure the list takes full width */
+    max-width: 600px; /* Limit the width */
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space evenly */
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dddddd; /* Gray bottom border */
+    padding: 5px 0;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.complete-task-btn {
+    background-color: #4CAF50; /* Green color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.complete-task-btn:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+.complete-task-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.complete-task-btn:active {
+    background-color: #3e8e41; /* Darker green color on click */
+}
+
+.complete-task-btn:disabled {
+    background-color: #cccccc; /* Light gray color for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.delete-task-btn {
+    background-color: #ff0000; /* Red color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px; /* Add margin between delete and complete buttons */
+}
+
+.delete-task-btn:hover {
+    background-color: #cc0000; /* Darker red color on hover */
+}
+
+.delete-task-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.delete-task-btn:active {
+    background-color: #990000; /* Darker red color on click */
+}
+.delete-task-btn {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.complete-task-btn {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+/* Styles for the tabs */
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.tab.active {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Styles for the clear button */
+.clear-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.clear-btn:hover {
+    background-color: #005faa;
+}
+.task-entry-container {
+    margin-bottom: 20px; /* Add space below the task entry container */
+}
+
+.tabs {
+    margin-top: 20px; /* Add space above the tabs */
+}
